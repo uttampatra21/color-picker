@@ -4,6 +4,7 @@ const getColor = () =>{
     console.log(randomColor);
     const color = document.querySelector(".color").innerHTML = randomColor;
     const body = document.querySelector("body").style.backgroundColor = randomColor;
+    document.getElementById("btn").style.backgroundColor = randomColor; 
     navigator.clipboard.writeText(randomColor);
 }
 document.getElementById("btn").addEventListener("click",()=>{
